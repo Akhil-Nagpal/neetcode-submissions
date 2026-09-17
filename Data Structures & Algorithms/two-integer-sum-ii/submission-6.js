@@ -1,0 +1,18 @@
+class Solution {
+    /**
+     * @param {number[]} numbers
+     * @param {number} target
+     * @return {number[]}
+     */
+    twoSum(numbers, target) {
+        // brute force 
+        for (let i = 0; i < numbers.length; i++) {
+            for (let j = 0; j < numbers.length; j++) {
+                if (numbers[i] + numbers[j] === target) {
+                    return [i + 1, j + 1];
+                }
+            }
+        }
+        return [-1, -1]
+    }
+}
